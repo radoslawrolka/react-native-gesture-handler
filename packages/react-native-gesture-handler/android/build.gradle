@@ -197,11 +197,7 @@ android {
                 srcDirs += 'noreanimated/src/main/java'
             }
 
-            if (shouldUseCommonInterfaceFromRNSVG()) {
-                srcDirs += 'svg/src/main/java'
-            } else {
-                srcDirs += 'nosvg/src/main/java'
-            }
+            srcDirs += 'svg/src/main/java'
 
             if (isNewArchitectureEnabled()) {
                 srcDirs += 'fabric/src/main/java'
